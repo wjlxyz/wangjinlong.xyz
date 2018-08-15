@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Jinlong
+subtitle: 叶落知秋
 description:
 keywords:
-author: John Doe
+author: 王金龙
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://wangjinlong.xyz
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -25,6 +25,7 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
+project_dir: projects
 i18n_dir: :lang
 skip_render:
 
@@ -78,4 +79,6 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@wangjinlong.xyz:/home/git/hexo.git
+  branch: master
