@@ -1,8 +1,7 @@
 ---
+title: (Chromium源码系列一)Chromium简介及源代码获取和编译
 typora-root-url: ../Chromium1
 ---
-
-## Chromium源码系列一：Chromium简介及源代码获取和编译
 
 ### Chromium简介
 
@@ -15,8 +14,8 @@ typora-root-url: ../Chromium1
 `Chromium`与`Chrome`的差异主要表现在以下方面：
 
 1. 程序图标：两者图标只在色彩上不同，`Chromium`是天蓝色，而`Chrome`是`Google`公司的代表色（红、黄、蓝、绿）；
-   ![chromium logo](./Chromium1/chromium-logo.jpg)
-   ![chrome logo](./Chromium1/chrome-logo.jpg)
+   ![chromium logo](./pictures/Chromium1/chromium-logo.jpg)
+   ![chrome logo](./pictures/Chromium1/chrome-logo.jpg)
 
    2. 自动更新：`Chromium`不开放自动更新功能，所以用户需要手动下载更新，而`Chrome`则可自动脸上`Google`的服务器更新，但新版的推出很慢；
    3. 安装模式：`Chromium`可以免安装，下载[`zip压缩包`](https://www.chromium.org/getting-involved/download-chromium)后解压即可使用，而`Chrome`则只有安装板；
@@ -48,24 +47,24 @@ typora-root-url: ../Chromium1
 
 1. 首先确保`Unicode`文件名不会破坏`HFS`。执行
 
-```sh
-git config --global core.precomposeUnicode true
-```
+   ```sh
+   git config --global core.precomposeUnicode true
+   ```
 
 2. 创建`chromium`目录，切记`chromium`所在的目录名中没有空格。我在下载`depot_tools`之前已经创建了`chromium`目录，并且将`depot_tools`和`src`都放在了`chromium`目录下。执行
 
-```sh
-mkdir chromium && cd chromium
-git config --global core.precomposeUnicode true
-```
+   ```sh
+   mkdir chromium && cd chromium
+   git config --global core.precomposeUnicode true
+   ```
 
 3. 使用`depot_tools`获取`chromium`代码。执行
 
-```sh
-fetch chromium
-# or
-fetch chromium --no-history # 不下载全部的代码提交历史，推荐使用这个
-```
+   ```sh
+   fetch chromium
+   # or
+   fetch chromium --no-history # 不下载全部的代码提交历史，推荐使用这个
+   ```
 
 下载完成后，会有一个`.gclient`文件，以及源代码目录`src`，之后的所有操作都在src中执行。
 
@@ -73,9 +72,9 @@ fetch chromium --no-history # 不下载全部的代码提交历史，推荐使�
 
 `Chromium`使用[`Ninja`](https://ninja-build.org/)和[`GN`](https://chromium.googlesource.com/chromium/src/+/master/tools/gn/docs/quick_start.md)作为主要的构建工具。执行
 
-```sh
-gn gen out/Default
-```
+   ```sh
+   gn gen out/Default
+   ```
 
 其中`out/`是在`src`目录下，`Default`可以是别的名字，但是一定要在`out`目录下。
 
@@ -83,27 +82,27 @@ gn gen out/Default
 
 使用`Ninja`来构建`Chromium`程序。执行
 
-```
-ninja -C out/Default chrome
-```
+   ```sh
+   ninja -C out/Default chrome
+   ```
 
 执行这条命令需要挺长时间，我跑了十多个小时才完成`build`，不过好的一点是，即使中途中断了，再重启也可以在之前的基础上使用`gclient sync`命令继续构建。完成之后就可以在`out/Default`目录中看到Chromium浏览器的应用程序了。
-![chromium build structure](./Chromium1/chromium-build-structure.png)
+![chromium build structure](./pictures/Chromium1/chromium-build-structure.png)
 
 #### 使用`Xcode`来构建Chromium
 
 我们要使用`Xcode`来阅读和调试`Chromium`代码，因此我们需要执行
 
-```sh
-gn gen out/gn --ide=xcode
-```
+   ```sh
+   gn gen out/gn --ide=xcode
+   ```
 
 在用`Ninja`和`GN`构建完成之后，执行这条命令需要的时间就比较少了。然后就可以用`Xcode`来打开这个工程了。执行
 
-```sh
-open out/gn/ninja/all.xcworkspace
-```
+   ```sh
+   open out/gn/ninja/all.xcworkspace
+   ```
 
-下面是用`Xcode`打开工程后的代码结构。![chromium code structure](./Chromium1/code-structure.png)
+下面是用`Xcode`打开工程后的代码结构。![chromium code structure](./pictures/Chromium1/code-structure.png)
 
 至此，我们就在本地构建好了Chromium的源代码，可以开始Chromium源代码的阅读之旅了。
