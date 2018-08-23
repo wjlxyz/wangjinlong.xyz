@@ -14,8 +14,8 @@ typora-root-url: ../Chromium1
 `Chromium`与`Chrome`的差异主要表现在以下方面：
 
 1. 程序图标：两者图标只在色彩上不同，`Chromium`是天蓝色，而`Chrome`是`Google`公司的代表色（红、黄、蓝、绿）；
-   ![chromium logo](./pictures/Chromium1/chromium-logo.jpg)
-   ![chrome logo](./pictures/Chromium1/chrome-logo.jpg)
+   ![chromium logo](/pictures/Chromium1/chromium-logo.jpg)
+   ![chrome logo](/pictures/Chromium1/chrome-logo.jpg)
 
    2. 自动更新：`Chromium`不开放自动更新功能，所以用户需要手动下载更新，而`Chrome`则可自动脸上`Google`的服务器更新，但新版的推出很慢；
    3. 安装模式：`Chromium`可以免安装，下载[`zip压缩包`](https://www.chromium.org/getting-involved/download-chromium)后解压即可使用，而`Chrome`则只有安装板；
@@ -87,7 +87,7 @@ typora-root-url: ../Chromium1
    ```
 
 执行这条命令需要挺长时间，我跑了十多个小时才完成`build`，不过好的一点是，即使中途中断了，再重启也可以在之前的基础上使用`gclient sync`命令继续构建。完成之后就可以在`out/Default`目录中看到Chromium浏览器的应用程序了。
-![chromium build structure](./pictures/Chromium1/chromium-build-structure.png)
+![chromium build structure](/pictures/Chromium1/chromium-build-structure.png)
 
 #### 使用`Xcode`来构建Chromium
 
@@ -103,6 +103,6 @@ typora-root-url: ../Chromium1
    open out/gn/ninja/all.xcworkspace
    ```
 
-下面是用`Xcode`打开工程后的代码结构。![chromium code structure](./pictures/Chromium1/code-structure.png)
+下面是用`Xcode`打开工程后的代码结构。![chromium code structure](/pictures/Chromium1/code-structure.png)
 
 至此，我们就在本地构建好了Chromium的源代码，可以开始Chromium源代码的阅读之旅了。
