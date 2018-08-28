@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Jinlong
-subtitle: 叶落知秋
+title: 叶落知秋
+subtitle: Jinlong
 description:
 keywords:
 author: 王金龙
@@ -75,6 +75,13 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: cafe
+
+plugin:
+  - hexo-generator-feed
+feed:
+type: atom
+path: atom.xml
+limit: 20
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
