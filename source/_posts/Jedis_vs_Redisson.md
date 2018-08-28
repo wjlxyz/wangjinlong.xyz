@@ -1,5 +1,11 @@
 ---
 title: Jedis与Redisson选型对比
+categories:
+    - '技术'
+    - 'Java'
+tags:
+    - Java
+    - Redis
 ---
 
 ### 1　　概述

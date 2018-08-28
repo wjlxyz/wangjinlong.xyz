@@ -1,6 +1,11 @@
 ---
 title: (Chromium源码系列一)Chromium简介及源代码获取和编译
-typora-root-url: ../Chromium1
+categories:
+    - '技术'
+    - '源码阅读'
+tags:
+    - chrome
+    - 源码阅读
 ---
 
 ### Chromium简介
