@@ -9,6 +9,8 @@ typora-root-url: ../Chromium1
 
 ​	在[此](https://www.netmarketshare.com/)可以查看各个浏览器的市场占有率。
 
+<!--more-->
+
 #### Chromium vs Chrome
 
 `Chromium`与`Chrome`的差异主要表现在以下方面：
