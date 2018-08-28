@@ -8,6 +8,8 @@ title: Jedis与Redisson选型对比
 
 本文的主要内容为对比Redis的两个框架：`Jedis`与`Redisson`，分析各自的优势与缺点，为项目中`Java`缓存方案中的Redis编程模型的选择提供参考。
 
+<!--more-->
+
 ### 2   `Jedis`与`Redisson`对比
 
 #### 2.1    概况对比
