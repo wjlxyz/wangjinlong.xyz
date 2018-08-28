@@ -9,19 +9,19 @@ title: 深度解析Java单例模式
 　　最简单的单件模式的实现，代码如下：
 
 ```java
- 1 /**
- 2  * Created by McBye King on 2016/10/23.
- 3  */
- 4 public class Singleton {
- 5     private static Singleton singleton;
- 6     private Singleton(){}
- 7     public static Singleton getSingleton(){
- 8         if(singleton == null){
- 9             singleton = new Singleton();
-10         }
-11         return singleton;
-12     }
-13 }
+ /**
+  * Created by McBye King on 2016/10/23.
+  */
+ public class Singleton {
+     private static Singleton singleton;
+     private Singleton(){}
+     public static Singleton getSingleton(){
+         if(singleton == null){
+             singleton = new Singleton();
+         }
+         return singleton;
+     }
+ }
 ```
 
 　　结合以上的代码，对单件模式进行简单的阐述。
