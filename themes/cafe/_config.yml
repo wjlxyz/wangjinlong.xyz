@@ -125,3 +125,8 @@ google_plus:
 fb_admins:
 fb_app_id:
 
+skip_render:
+  - README.md
+  - baidu_verify_oWcE6GBheq.html
+
+
