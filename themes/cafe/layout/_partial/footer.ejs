@@ -2,9 +2,11 @@
   <% if (theme.sidebar === 'bottom'){ %>
     <%- partial('_partial/sidebar') %>
   <% } %>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <div class="outer">
     <div id="footer-left">
-      &copy; 2018 - <%= config.author || config.title %>&nbsp;|&nbsp;
+      &copy; 2018 - <%= config.author || config.title %>&nbsp;|&nbsp;本站总访问量 <span id="busuanzi_value_site_pv"></span> 次&nbsp&nbsp&nbsp
+        | 本站访客数<span id="busuanzi_value_site_uv"></span>人次
     </div>
      <div id="footer-right">
       <%= __('contact') %>&nbsp;|&nbsp;<%= config.email || theme.email  || config.url %>
