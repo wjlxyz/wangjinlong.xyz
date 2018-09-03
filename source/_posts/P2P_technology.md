@@ -1,5 +1,5 @@
 ---
-title: P2P技术揭秘（一）——P2P技术概述
+title: P2P技术揭秘（一）：P2P技术概述
 categories:
     - '技术'
     - '网络'
