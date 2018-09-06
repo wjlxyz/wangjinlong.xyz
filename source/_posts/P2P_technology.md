@@ -1,7 +1,7 @@
 ---
 title: P2P技术揭秘（一）：P2P技术概述
 categories:
-    - '技术'
+    - '读书笔记'
     - '网络'
     - 'P2P技术'
 tags:
