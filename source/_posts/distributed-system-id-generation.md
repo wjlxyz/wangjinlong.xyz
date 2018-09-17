@@ -333,5 +333,5 @@ public class SnowflakeIdWorker {
 
 
 
-原文地址：[http://wangjinlong.xyz/2018/09/17/distributed-system-id-generation/](http://wangjinlong.xyz/2018/09/17/distributed-system-id-generation/)
+原文地址：[https://wangjinlong.xyz/2018/09/17/distributed-system-id-generation/](https://wangjinlong.xyz/2018/09/17/distributed-system-id-generation/)
 
