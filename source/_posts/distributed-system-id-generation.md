@@ -330,3 +330,8 @@ public class SnowflakeIdWorker {
 ### 缺点
 
 - 在单机上是递增的，但是在分布式环境中，每台机器上的时钟不可能完全同步，可能会出现不是全局递增的情况
+
+
+
+原文地址：[http://wangjinlong.xyz/2018/09/17/distributed-system-id-generation/](http://wangjinlong.xyz/2018/09/17/distributed-system-id-generation/)
+
