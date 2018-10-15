@@ -1,5 +1,5 @@
 ---
-title: 《Effective Java》学习笔记——对于所有对象都通用的方法
+title: 《Effective Java》学习笔记(二)——对于所有对象都通用的方法
 categories:
     - '技术'
     - 'Java'

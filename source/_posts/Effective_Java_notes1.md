@@ -1,5 +1,5 @@
 ---
-title: 《Effective Java》学习笔记——创建和销毁对象
+title: 《Effective Java》学习笔记(一)——创建和销毁对象
 categories:
     - '技术'
     - 'Java'
