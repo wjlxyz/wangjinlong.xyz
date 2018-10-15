@@ -8,7 +8,7 @@ tags:
     - 读书笔记
 ---
 
-
+《Effective Java》学习笔记
 <!--more-->
 
 # 创建和销毁对象
