@@ -91,3 +91,21 @@ Cloneable接口的目的是作为对象的一个mixin接口，表明这样的对
 如果专门为了继承而去设计一个clone方法，那就应该模拟Object.clone的行为：它应该被声明为protected，抛出CloneNotSupportedException，并且该类不应该实现Cloneable接口。这样可以使子类具有实现或者不实现Cloneable接口的自由。还有，如果决定用线程安全的类实现Cloneable接口，那么要记得它的clone方法必须实现很好的同步。
 
 Cloneable具有上述这么多的问题，可以肯定的说，其他的接口都不应该扩展这个接口，为了继承而设计的类也不应该实现这个接口，对于一个为了继承而设计的类，如果你未能提供行为良好的受保护的clone方法，它的子类就不可能实现Cloneable接口。
+
+
+
+# 考虑实现Comparable接口
+
+compareTo方法是Comparable接口中唯一的方法，compareTo方法不但允许进行简单的等同性比较，而且允许执行顺序比较。类实现了Comparable接口，就表明它的实例具有内在的排序关系。
+
+一旦实现了Comparable接口，它就可以跟许多泛型算法以及依赖于该接口的集合实现进行协作。Java平台类库中的所有值类都实现了Comparable接口。如果你正在编写一个值类，它具有非常明显的内在排序关系，比如按字母排序、按数值顺序或者按年代排序，那就应该坚决考虑实现这个接口：
+
+```java
+public interface Comparable<T> {
+    int compareTo(T t);
+}
+```
+
+就好像违反了hashCode约定的类会破坏其他依赖于散列做法的类一样，违反compareTo约定的类也会破坏其他依赖于比较关系的类。依赖于比较关系的类包括有序集合类TreeSet和TreeMap，以及工具类Collections和Arrays，他们内部包含有搜索和排序算法。
+
+CompareTo方法中域的比较是顺序的比较，而不是等同性的比较。比较对象引用域可以使通过递归地调用compareTo方法来实现。如果一个域没有实现Comparable接口，或者你需要使用一个非标准的排序关系，就可以使用一个显式的Comparator来代替，或者编写自己的Comparator，或者使用已有的Comparator。
