@@ -1,7 +1,12 @@
 ---
-title: 《Effective Java》学习笔记——类和接口
+title: 《Effective Java》学习笔记(三)——类和接口
+categories:
+    - '技术'
+    - 'Java'
+tags:
+    - Java
+    - 读书笔记
 ---
-
 
 
 
