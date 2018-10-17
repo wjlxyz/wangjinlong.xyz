@@ -1,9 +1,15 @@
 ---
-title: 《Effective Java》学习笔记——泛型
-
+title: 《Effective Java》学习笔记四——泛型
+categories:
+    - '技术'
+    - 'Java'
+tags:
+    - Java
+    - 读书笔记
 ---
 
-
+《Effective Java》学习笔记
+<!--more-->
 
 
 
