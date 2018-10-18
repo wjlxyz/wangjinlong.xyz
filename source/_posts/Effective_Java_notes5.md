@@ -1,8 +1,15 @@
 ---
-title: 《Effective Java》学习笔记——枚举和注解
-
+title: 《Effective Java》学习笔记四——枚举和注解
+categories:
+    - '技术'
+    - 'Java'
+tags:
+    - Java
+    - 读书笔记
 ---
 
+《Effective Java》学习笔记
+<!--more-->
 
 
 
