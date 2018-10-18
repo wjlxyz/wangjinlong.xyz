@@ -1,8 +1,15 @@
 ---
-title: 《Effective Java》学习笔记——通用程序设计
-
+title: 《Effective Java》学习笔记六——通用程序设计
+categories:
+    - '技术'
+    - 'Java'
+tags:
+    - Java
+    - 读书笔记
 ---
 
+《Effective Java》学习笔记
+<!--more-->
 
 
 
