@@ -1,9 +1,15 @@
 ---
-title: 《Effective Java》学习笔记——方法
-
+title: 《Effective Java》学习笔记六——方法
+categories:
+    - '技术'
+    - 'Java'
+tags:
+    - Java
+    - 读书笔记
 ---
 
-
+《Effective Java》学习笔记
+<!--more-->
 
 
 
