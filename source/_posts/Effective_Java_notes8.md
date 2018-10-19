@@ -1,10 +1,15 @@
 ---
-title: 《Effective Java》学习笔记——异常
-
+title: 《Effective Java》学习笔记八——异常
+categories:
+    - '技术'
+    - 'Java'
+tags:
+    - Java
+    - 读书笔记
 ---
 
-
-
+《Effective Java》学习笔记
+<!--more-->
 
 
 # 只针对异常的情况才使用异常
