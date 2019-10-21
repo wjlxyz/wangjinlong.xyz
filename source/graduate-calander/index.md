@@ -1,6 +1,6 @@
-# 考研日历
+# 温习数学
 
-## 历史复习日历
+## 往期复习日历
 
 [高等数学上](https://wangjinlong.xyz/2019/06/01/graduate_calender1)
 
