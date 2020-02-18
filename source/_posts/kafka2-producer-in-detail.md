@@ -1,5 +1,5 @@
 ---
-title: Kafka系列1：深入理解Kafka生产者
+title: Kafka系列2：深入理解Kafka生产者
 categories:
     - '技术'
     - 'Kafka'
